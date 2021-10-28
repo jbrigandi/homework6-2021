@@ -20,7 +20,6 @@ header {
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
 
 .card header{
@@ -28,9 +27,8 @@ header {
     border: 2px solid #45adad;
     padding-top: 20px;
     padding-bottom: 20px;
-    border-top-right-radius: 7px;
     border-top-left-radius: 7px;
-
+    border-top-right-radius: 7px;
 }
 
 .pricing{
@@ -50,6 +48,7 @@ header {
    
 
 }
+
 .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -96,7 +95,6 @@ header{
 
 .nav_links{
     flex-direction: row;
-    align-items: center;
 }
 
 .card{
@@ -107,11 +105,28 @@ header{
 }
 
 }
-@media print {
+@media print{
 body {
     background-image: none;
 }
 
+
+.nav_links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* ask at OH */
+}
+
+.card{
+    border: 2px solid #45ADDD;
+    display: flex;
+    flex-basis: 250px;
+}
+
+#gallery, .gallery{
+    display: none;
+}
 
 }
 
